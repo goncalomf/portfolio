@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Raleway:ital,wght@1,800&display=swap');
+
+.center-div {
+    display: flex;
+}
+
+.center-div h1 h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main-div img {
+    width: 55%;
+    border-radius: 100%;
+}
+
+.main-div {
+    display: block;
+    margin: 0 auto;
+    text-align: center;     
+    
+    color: black;
+}
+
+.info-div {
+    padding: 10% 7%;
+}
+
