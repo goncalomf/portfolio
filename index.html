@@ -12,26 +12,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center">
-            <a class="nav-item nav-link" href="#">About me</a>
-            <a class="nav-item nav-link" href="#">Education & Certifications</a>
-            <a class="nav-item nav-link" href="#">Technologies</a>
-            <a class="nav-item nav-link" href="#">Contact me</a>
-          </div>
+    <div class="row">
+        <div class="col-12">
+            <nav class="navbar navbar-expand-lg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-center">
+                    <a class="nav-item nav-link" href="#">About me</a>
+                    <a class="nav-item nav-link" href="#">Education & Certifications</a>
+                    <a class="nav-item nav-link" href="#">Technologies</a>
+                    <a class="nav-item nav-link" href="#">Contact me</a>
+                </div>
+                </div>
+            </nav>
         </div>
-      </nav>
+    </div>
 
       <div id="topOfPage" class="first-section-page">
-        <div class="main-text">
-            <h1>Hi! My name is Gonçalo Fernandes</h1>
-        </div>
-        <div class="main-image">
-            <img src="assets/Me and Eclipses.png" alt="goncalosImage">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="first-section-page-h1">Hi! My name is Gonçalo Fernandes</h1>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/Me and Eclipses.png" alt="goncalosImage">
+            </div>
         </div>
       </div>
 
@@ -40,35 +46,33 @@
             <img src="assets/arrow.png" alt="">
         </button>
     </div>
-    <div class="second-section-page">
-        <h1>About me</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-6 text-justify">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere eros ac egestas sollicitudin.
-                    Phasellus gravida velit ac venenatis aliquet. Mauris sollicitudin, justo id sollicitudin malesuada, arcu libero vestibulum lacus, id 
-                    pellentesque nulla sapien ut erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at erat tempor, varius odio in, aliquet massa. 
-                    Donec cursus finibus nunc. Vivamus eget magna magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                    Duis iaculis urna efficitur elit tempor, vel sodales orci faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat ligula. 
-                    Duis egestas venenatis tellus id
-                    volutpat. 
-                    </p>
-                    <p> 
-                    at tortor et magna finibus rhoncus. Donec a euismod ante. Maecenas rutrum posuere bibendum. Nam venenatis molestie nibh ac ornare.
-                    Nam vehicula arcu finibus ligula tempus venenatis. Phasellus semper mollis arcu, ut mollis eros placerat ac. 
-                    In mattis felis quis arcu ultrices, at posuere urna vehicula. Integer id porta nunc. In ullamcorper nec sapien id vulputate. 
-                    Integer ultrices arcu sollicitudin scelerisque tincidunt. Maecenas dictum tortor a lobortis elementum. Vivamus commodo, nisl dictum mollis malesuada, 
-                    lorem odio aliquam lacus, eget varius nulla felis non odio. Integer pellentesque, lorem non ornare suscipit, ipsum magna sodales tellus, quis venenatis 
-                    tortor tellus blandit mi. Morbi tincidunt et sapien ac tincidunt. Sed laoreet lorem auctor magna imperdiet iaculis quis ut nisl. In gravida pharetra 
-                    felis vitae pharetra.
-                    </p>
-                </div>  
-                <div class="col-6">
-                    <img id="about-me-image"  src="assets/eu2.jpeg" alt="">
-                </div>
+    <h1 id="about-me">About me</h1>
+    <div id="second-section-page" class="container">
+        <div class="row">
+            <div class="col-6 text-justify">
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi posuere eros ac egestas sollicitudin.
+                Phasellus gravida velit ac venenatis aliquet. Mauris sollicitudin, justo id sollicitudin malesuada, arcu libero vestibulum lacus, id 
+                pellentesque nulla sapien ut erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at erat tempor, varius odio in, aliquet massa. 
+                Donec cursus finibus nunc. Vivamus eget magna magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                Duis iaculis urna efficitur elit tempor, vel sodales orci faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat ligula. 
+                Duis egestas venenatis tellus id
+                volutpat. 
+                </p>
+                <p> 
+                at tortor et magna finibus rhoncus. Donec a euismod ante. Maecenas rutrum posuere bibendum. Nam venenatis molestie nibh ac ornare.
+                Nam vehicula arcu finibus ligula tempus venenatis. Phasellus semper mollis arcu, ut mollis eros placerat ac. 
+                In mattis felis quis arcu ultrices, at posuere urna vehicula. Integer id porta nunc. In ullamcorper nec sapien id vulputate. 
+                Integer ultrices arcu sollicitudin scelerisque tincidunt. Maecenas dictum tortor a lobortis elementum. Vivamus commodo, nisl dictum mollis malesuada, 
+                lorem odio aliquam lacus, eget varius nulla felis non odio. Integer pellentesque, lorem non ornare suscipit, ipsum magna sodales tellus, quis venenatis 
+                tortor tellus blandit mi. Morbi tincidunt et sapien ac tincidunt. Sed laoreet lorem auctor magna imperdiet iaculis quis ut nisl. In gravida pharetra 
+                felis vitae pharetra.
+                </p>
+            </div>  
+            <div class="col-6">
+                <img id="about-me-image" class="image-c"  src="assets/eu2.jpeg" alt="">
             </div>
-        </div> 
-    </div>
+        </div>
+    </div> 
 </body>
 </html>
