@@ -1,2 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Raleway:ital,wght@1,800&display=swap');
 
+
+body {
+    font-family: Merriweather;
+    background-color: #2C3333;
+}
+
+nav {
+    display: flex;
+    border-radius: 280px;
+    width: 98%;
+    padding: 15px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #395B64;
+}
+
+#navbarNavAltMarkup > div > a  {
+    text-decoration: none;
+    color: #E7F6F2;
+}
+
+.first-section-page {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 200px;
+    padding-top: 100px;
+    align-items: center;
+}
+
+.main-text {
+    color: #E7F6F2;
+    width: 35%;          
+}
+
+.main-text h1{
+    color: #E7F6F2;
+    font-size: 90px;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+#navbarNavAltMarkup {
+    justify-content: space-around;
+}
+
+.go-up-button {
+    background-color: #A5C9CA;
+    border-radius: 100%;
+    border: none;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-right: 25px;
+
+}
+
+.button{
+    position: sticky;
+    top: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.go-up-button img{
+    width: 45%;
+    transform: rotate(180deg);
+}
+
+.go-up-button:hover {
+    background-color: rgba(165, 201, 202, 0.85)
+}
+
+
+.second-section-page {
+    margin-top: 80px;
+    background-color: #E7F6F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section-page h1 {
+    color: #2C3333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 65px;
+}
+
+.about-me {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.about-me p {
+    margin: 25px;
+    width: 25%;
+}
+
+.about-me img{
+    border-radius: 100%;
+    width: 15%;
+}
