@@ -1,91 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Raleway:ital,wght@1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Raleway:ital,wght@1,800&display=swap");
 
+/* Some color variables */
+
+:root {
+  --primary: #2c3333;
+  --secondary: #395b64;
+  --tertiary: #e7f6f2;
+  --quarternary: #a5c9ca;
+}
+
+/* Font & Background color Definition */
 
 body {
-    font-family: Merriweather;
-    background-color: #2C3333;
+  font-family: Merriweather;
+  background-color: var(--primary);
 }
+
+/* Go to the Top button */
+
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  margin-top: 10px;
+}
+
+#toTop button {
+  font-size: 2.5rem;
+}
+
+#go-up-button {
+  background-color: var(--quaternary);
+  border-radius: 100%;
+  border: none;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin-right: 25px;
+}
+
+#go-up-button:hover {
+  background-color: rgba(165, 201, 202, 0.85);
+}
+
+/* NavBar */
 
 nav {
-    display: flex;
-    border-radius: 280px;
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: #395B64;
-}
-
-#navbarNavAltMarkup > div > a  {
-    text-decoration: none;
-    color: #E7F6F2;
-}
-
-.first-section-page {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    padding-left: 200px;
-    padding-top: 100px;
-    align-items: center;
-}
-
-.main-text {
-    color: #E7F6F2;
-    width: 35%;         
-}
-
-.first-section-page-h1{
-    color: #E7F6F2;
-    font-size: 90px;
-    padding-top: 165px;
-}
-
-.main-image img {
-    width: 100%;
+  border-radius: 20px;
+  padding: 15px;
+  width: 90%;
+  background-color: var(--secondary);
 }
 
 #navbarNavAltMarkup {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
-.go-up-button {
-    background-color: #A5C9CA;
-    border-radius: 100%;
-    border: none;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    margin-right: 25px;
-
+#navbarNavAltMarkup > div > a {
+  text-decoration: none;
+  color: var(--tertiary);
 }
 
-.button{
-    position: sticky;
-    top: 0;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row-reverse;
+/* First Section Page */
+
+#first-section-page-h1 {
+  color: var(--tertiary);
+  width: 45%;
+  font-size: 5rem;
+  margin: 130px auto;
 }
 
-.go-up-button img{
-    width: 45%;
-    transform: rotate(180deg);
+/* Image First Section Page */
+
+#me-and-eclipses {
+  width: 75%;
+  margin-bottom: 45px;
 }
 
-.go-up-button:hover {
-    background-color: rgba(165, 201, 202, 0.85)
-}
+/* Second Section Page */
 
-#about-me {
-    margin-top: 80px;
-    background-color: #E7F6F2;
+.new-colored-div {
+  background-color: var(--tertiary);
 }
 
 
+.title-of-page {
+  margin-top: 80px;
+  background-color: var(--tertiary);
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 20px 0;
+}
 
-#about-me-image{
-    border-radius: 20%;
-    width: 85%;
-    margin-left: 55px;
-    margin-top: 65px;
+#about-me-text {
+  text-justify: distribute;
+  margin: 10px; 
+  font-size: 0.8rem;
+}
+
+#about-me-image {
+  border-radius: 20%;
+  width: 60%;
 }
