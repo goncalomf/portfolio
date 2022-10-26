@@ -1,13 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Gonçalo Fernandes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <!-- Navbar -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-lg-12">
+          <nav id="topOfPage" class="navbar navbar-expand-lg">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav text-center">
+                <a class="nav-item nav-link" href="#">About me</a>
+                <a class="nav-item nav-link" href="#"
+                  >Education & Certifications</a
+                >
+                <a class="nav-item nav-link" href="#">Technologies</a>
+                <a class="nav-item nav-link" href="#">Contact me</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- First Section Page -->
+    <div id="first-section-page" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 m-auto">
+          <h1 id="first-section-page-h1">
+            <p>Hi! My name is</p>
+            <p>Gonçalo</p>
+            <p>Fernandes</p>
+          </h1>
+        </div>
+        <div
+          class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center"
+        >
+          <img
+            id="me-and-eclipses"
+            src="assets/Me and Eclipses.png"
+            alt="goncalosImage"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="toTop">
+      <button onclick="window.location.href='#topOfPage'" id="go-up-button">
+        ↑
+      </button>
+    </div>
+
+    <!-- Second section page -->
+    <div class="new-colored-div">
+      <div class="container-fluid">
+        <div class="row">
+          <h1 class="title-of-page">About me</h1>
+          <div id="about-me-text" class="col-sm-12 col-lg-6">
+            <p>
+              Hi! My Name is Gonçalo Morais Fernandes, I'm from Viana do Castelo
+              which is a city from the north of Portugal. In this website I will
+              introduce about myself and show my course along the way! I hope
+              you like it! I'm at the moment studying Computer Engineering and
+              Music. I'm a Technology and Music enthusiast since I was little. I
+              speak Portuguese and English fluently. I am empathetic, friendly,
+              a good team worker and I want to learn new technologies.
+            </p>
+          </div>
+          <div
+            class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center"
+          >
+            <img id="about-me-image" src="assets/eu2.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
