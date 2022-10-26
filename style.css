@@ -60,6 +60,7 @@ nav {
 #navbarNavAltMarkup > div > a {
   text-decoration: none;
   color: var(--tertiary);
+  font-size: 1.4rem;
 }
 
 /* First Section Page */
@@ -67,7 +68,7 @@ nav {
 #first-section-page-h1 {
   color: var(--tertiary);
   width: 45%;
-  font-size: 5rem;
+  font-size: 8rem;
   margin: 130px auto;
 }
 
@@ -92,7 +93,7 @@ nav {
 }
 
 #about-me-text {
-  font-size: 0.8rem;
+  font-size: 1.8rem;
   line-height: 2;
   text-align: justify;
   text-justify: inter-word;
@@ -109,6 +110,45 @@ nav {
 
 /* Media Queries */
 
+@media (max-width: 1440px) {
+
+  #first-section-page-h1 {
+    font-size: 4.5rem;
+  }
+
+  #navbarNavAltMarkup > div > a{
+    font-size: 1rem;
+  }
+
+  #about-me-text p {
+    margin: 50px 50px;
+  }
+  
+  #about-me-text{
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #first-section-page-h1 {
+    font-size: 3rem;
+  }
+
+  #about-me-text p {
+    margin: 50px 50px;
+  }
+
+  #about-me-text{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #about-me-text {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 575.98px) {
   /* Navbar */
 
@@ -118,7 +158,7 @@ nav {
 
   /* First Page Section */
   #first-section-page-h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 50px 60px;
   }
 
@@ -127,7 +167,7 @@ nav {
     font-size: 2.8rem;
   }
   #about-me-text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
   }
 
   #about-me-text p {
@@ -155,18 +195,11 @@ nav {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   /* First Page Section */
   #first-section-page-h1 {
-    font-size: 5rem;
-    margin: 50px 60px;
-  }
-  /* Second Page Section */
-  .title-of-page {
-    font-size: 2.8rem;
-  }
-  #about-me-text {
-    font-size: 0.9rem;
+    font-size: 2.5rem;
+    margin: 50px auto;
   }
 
   /* Go up button */
@@ -186,10 +219,41 @@ nav {
 
   /* Second Page Section */
   .title-of-page {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
   }
   #about-me-text {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* First Page Section */
+  #first-section-page-h1  {
+    font-size: 2.3rem;
+    margin: 50px 60px;
+  }
+
+  /* Go up button */
+
+  #toTop button {
+    font-size: 1.5rem;
+  }
+  #go-up-button {
+    background-color: var(--quarternary);
+    border-radius: 100%;
+    border: none;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    margin-right: 25px;
+  }
+
+  /* Second Page Section */
+  .title-of-page {
+    font-size: 1.8rem;
+  }
+  #about-me-text {
+    font-size: 0.8rem;
   }
 
   #about-me-text p {
@@ -200,54 +264,4 @@ nav {
     width: 95%;
   }
 
-}
-
-/* Small devices */
-
-@media (max-width: 767.98px) {
-}
-
-/* // Medium devices */
-
-@media (max-width: 991.98px) {
-}
-
-/* Large devices  */
-
-@media (max-width: 1440px) {
-  #about-me-text p {
-    margin: 50px 50px;
-  }
-  
-  #about-me-text{
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 1199.98px) {
-  #about-me-text p {
-    margin: 50px 50px;
-  }
-
-  #about-me-text{
-    font-size: rem;
-  }
-}
-
-@media (max-width: 2560px) {
-  #about-me-text p {
-    margin: 50px 50px;
-  }
-
-  #about-me-text{
-    font-size: 1rem;
-  }
-
-  #about-me-image {
-    width: 65%;
-  }
-  
-  #navbarNavAltMarkup {
-    font-size: 0.9rem;
-  } 
 }
