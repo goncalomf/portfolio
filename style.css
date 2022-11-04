@@ -121,7 +121,7 @@ nav {
 
 #second-section-page {
   height: 650px;
-  max-height: 650px
+  max-height: 650px;
 }
 
 /*Third Section of the Page*/
@@ -137,7 +137,7 @@ nav {
   margin-top: 50px;
 }
 
-.line{
+.line {
   width: 8px;
   height: 200px;
   background-color: var(--tertiary);
@@ -152,85 +152,116 @@ nav {
 }
 
 .milestones {
-  transform:translateY(-30px);
+  transform: translateY(-30px);
   margin-left: 15px;
 }
 
 .milestone {
-  margin-bottom: 135px
+  margin-bottom: 135px;
 }
 
 .milestone h1 {
   font-size: 1rem;
   width: 330px;
-  line-height: 25px;  
+  line-height: 25px;
   margin: 0px;
 }
 
-.certification .icon img{
+.certifications {
+  margin-left: 5 5px;
+}
+
+.certification .icon img {
   padding-right: 5px;
   padding-top: 8px;
 }
 
-.certification  {
+.certification {
   border-bottom: var(--tertiary) solid 2px;
   display: flex;
   padding-bottom: 5px;
-  width: 55%;
-  margin-bottom: 50px;
+  width: 60%;
+  margin-bottom: 55px;
 }
 
 .certification .certifcation-text h1 {
   font-size: 1rem;
   width: 330px;
-  line-height: 25px;  
+  line-height: 25px;
   margin: 0px;
 }
 
 /* Fourth Section of the Page */
 
+#fourth-section-page {
+  height: 645px;
+}
+
 #fourth-section-page-title {
   padding: 20px 0px;
 }
 
-.tech-text {
+#tech-text {
   font-size: 1rem;
   text-decoration: none;
-  margin: 20px 40px;
+  padding: 20px 40px;
+  text-align: justify;
 }
 
 #sub-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 30px 0px;
 }
 
 .arsenal {
-  margin-bottom: 150px;
+  margin: 0px 80px;
 }
 
-.arsenal h1{
+.arsenal h1 {
   font-size: 1rem;
   margin: 0px;
   line-height: 45px;
 }
 
+/*Footer*/
+
+.footer {
+  text-align: center;
+  height: 160px;
+}
+
+.footer h1 {
+  color: var(--tertiary);
+  font-size: 1.4rem;
+  margin: 20px 0px;
+}
+  
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact img {
+  width: 40%;
+  padding: 0px 40px;
+}
 /* Media Queries */
 
 @media (max-width: 1440px) {
-
   #first-section-page-h1 {
     font-size: 4.5rem;
   }
 
-  #navbarNavAltMarkup > div > a{
+  #navbarNavAltMarkup > div > a {
     font-size: 1rem;
   }
 
   #about-me-text p {
     margin: 50px 50px;
   }
-  
-  #about-me-text{
+
+  #about-me-text {
     font-size: 0.8rem;
   }
 }
@@ -244,7 +275,7 @@ nav {
     margin: 50px 50px;
   }
 
-  #about-me-text{
+  #about-me-text {
     font-size: 1rem;
   }
 }
@@ -351,7 +382,7 @@ nav {
 
 @media (max-width: 320px) {
   /* First Page Section */
-  #first-section-page-h1  {
+  #first-section-page-h1 {
     font-size: 2.3rem;
     margin: 50px 60px;
   }
@@ -386,5 +417,4 @@ nav {
   #about-me-image {
     width: 95%;
   }
-
 }
