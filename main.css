@@ -16,6 +16,10 @@ body {
   background-color: var(--primary);
 }
 
+button:focus{
+  outline: none;
+}
+
 /* Go to the Top button */
 
 #toTop {

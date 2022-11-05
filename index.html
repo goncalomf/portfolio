@@ -52,14 +52,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav text-center">
-          <a href="#second-section-page" class="nav-item nav-link">About me</a>
-          <a href="#third-section-page" class="nav-item nav-link" href="#"
+          <a onclick="scrollToAboutMe()" class="nav-item nav-link">About me</a>
+          <a onclick="scrollToEducationCertifications()" class="nav-item nav-link"
             >Education & Certifications</a
           >
-          <a href="#fourth-section-page" class="nav-item nav-link" href="#"
+          <a onclick="scrollToTech()" class="nav-item nav-link"
             >Technologies</a
           >
-          <a href="#fourth-section-page" class="nav-item nav-link" href="#"
+          <a onclick="scrollToContacts()" class="nav-item nav-link"
             >Contact me</a
           >
         </div>
@@ -91,7 +91,7 @@
     </div>
 
     <div id="toTop">
-      <button onclick="window.location.href='#topOfPage'" id="go-up-button">
+      <button onclick="scrollToTop()" id="go-up-button">
         ↑
       </button>
     </div>
@@ -211,7 +211,7 @@
 
     <!--Footer  of the Page -->
 
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <h1>Contact me and Follow me!</h1>
       <div class="contacts">
         <div class="contact">
