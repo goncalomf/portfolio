@@ -2,55 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gonçalo Fernandes</title>
+    <title>Gonçalo's Fernandes - Website</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="./script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <header>
     <!-- Navbar -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-lg-12">
-          <nav id="topOfPage" class="navbar navbar-expand-lg">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav text-center">
-                <a class="nav-item nav-link" href="#">About me</a>
-                <a class="nav-item nav-link" href="#"
-                  >Education & Certifications</a
-                >
-                <a class="nav-item nav-link" href="#">Technologies</a>
-                <a class="nav-item nav-link" href="#">Contact me</a>
-              </div>
-            </div>
-          </nav>
+    <nav id="topOfPage" class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img src="./assets/icons/menu.svg" alt="">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav text-center">
+          <a onclick="scrollToAboutMe()" class="nav-item nav-link">About me</a>
+          <a onclick="scrollToEducationCertifications()" class="nav-item nav-link"
+            >Education & Certifications</a
+          >
+          <a onclick="scrollToTech()" class="nav-item nav-link"
+            >Technologies</a
+          >
+          <a onclick="scrollToContacts()" class="nav-item nav-link"
+            >Contact me</a
+          >
         </div>
       </div>
-    </div>
+    </nav>
   </header>
 
   <body>
@@ -77,16 +91,16 @@
     </div>
 
     <div id="toTop">
-      <button onclick="window.location.href='#topOfPage'" id="go-up-button">
+      <button onclick="scrollToTop()" id="go-up-button">
         ↑
       </button>
     </div>
 
     <!-- Second section page -->
-    <div class="new-colored-div">
+    <div id="second-section-page" class="new-colored-div">
       <div class="container-fluid">
+        <h1 class="title-of-page">About me</h1>
         <div class="row">
-          <h1 class="title-of-page">About me</h1>
           <div id="about-me-text" class="col-sm-12 col-lg-6">
             <p>
               Hi! My Name is Gonçalo Morais Fernandes, I'm from Viana do Castelo
@@ -106,5 +120,145 @@
         </div>
       </div>
     </div>
+
+    <!-- Third Section of the page -->
+    <div id="third-section-page" class="container-fluid">
+      <h1 class="title-of-page-white">Education & Certifications</h1>
+      <div class="row">
+        <div
+          id="third-page-subtitles"
+          class="col-sm-12 col-lg-6 d-flex align-items-center"
+        >
+          <div class="timeline">
+            <div class="lineNdot">
+              <div class="dot"></div>
+              <div class="line"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="milestones">
+              <div class="milestone">
+                <h1>
+                  Escola Secundária Santa Maria Maior Curso Ciêntifico de
+                  Ciências e Tecnologias
+                </h1>
+                <h1>Viana do Castelo</h1>
+                <h1>2016-2019</h1>
+              </div>
+              <div class="milestone">
+                <h1>ESTG - IPVC</h1>
+                <h1>Engenharia Informática</h1>
+                <h1>Viana do Castelo</h1>
+                <h1>2019 - Current year</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="third-page-subtitles" class="col-sm-12 col-lg-6">
+          <div class="certifications">
+            <div class="certification">
+              <img src="assets/icons/certifcation-icon.svg" alt="Papyrus" />
+              <div class="certifcation-text">
+                <h1>RSL Level 3 Certificate in Graded</h1>
+                <h1>Examination in Music</h1>
+                <h1>Performance Grade 6 - Electric Guitar</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Fourth Section of the Page -->
+    <div id="fourth-section-page" class="new-colored-div">
+      <div>
+        <h1 id="fourth-section-page-title" class="title-of-page">
+          Technologies
+        </h1>
+        <div id="tech-text" class="col-lg-12 col-sm-12">
+          Even though my journey is small I have, use a lot of tecnologies, and
+          excited to learn even more. I have interess in usefull and helpfull
+          languages and frameworks, but every every technologies is helpfull in
+          my arsenal.
+        </div>
+        <h1
+          id="sub-title"
+          class="d-flex align-items-center justify-content-center"
+        >
+          My Arsenal
+        </h1>
+        <div class="my arsenal">
+          <div class="arsenal">
+            <div>
+              <h1>C - Begginner level</h1>
+              <h1>Java - Intermediate level</h1>
+              <h1>Javascript - Begginner level</h1>
+              <h1>Python - Begginner level</h1>
+              <h1>Ionic - Intermediate level</h1>
+            </div>
+          </div>
+          <div class="arsenal">
+            <div>
+              <h1>SQL - Intermediate level</h1>
+              <h1>Git - Intermediate level</h1>
+              <h1>HTML - Intermediate level</h1>
+              <h1>CSS - Intermediate level</h1>
+              <h1>Bootstrap - Begginner level</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer  of the Page -->
+
+    <footer id="footer" class="footer">
+      <h1>Contact me and Follow me!</h1>
+      <div class="contacts">
+        <div class="contact">
+          <a href="https://github.com/goncalomf">
+            <img
+              src="assets/icons/social-media/free-github.svg"
+              alt="github-icon"
+            />
+          </a>
+        </div>
+        <div class="contact">
+          <a
+            href="https://www.linkedin.com/in/gon%C3%A7alo-fernandes-32212b240/"
+          >
+            <img
+              src="assets/icons/social-media/free-linkedin.svg"
+              alt="linked-in-icon"
+            />
+          </a>
+        </div>
+        <div class="contact">
+          <a href="https://www.instagram.com/goncalo.m.f.01/">
+            <img
+              src="assets/icons/social-media/free-instagram.svg"
+              alt="instagram-icon"
+            />
+          </a>
+        </div>
+        <div class="contact">
+          <a
+            href="https://open.spotify.com/user/l498g1816og653t2jf4tkvi9w?si=25783a7901e24334"
+          >
+            <img
+              src="assets/icons/social-media/free-spotify.svg"
+              alt="spotify-icon"
+            />
+          </a>
+        </div>
+        <div class="contact">
+          <a href="mailto:goncalofernandes01@gmail.com">
+            <img
+              src="assets/icons/social-media/free-mail.svg"
+              alt="e-mail-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
