@@ -266,6 +266,33 @@ nav button img {
 }
 /* Media Queries */
 
+@media (max-width: 1920px) {
+  #first-section-page-h1 {
+    font-size: 4.5rem;
+  }
+
+  #navbarNavAltMarkup > div > a {
+    font-size: 1rem;
+  }
+
+  #about-me-text {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    margin-left: 300px;
+  }
+
+  .certifications {
+    margin-left: 200px;
+  }
+
+  .contact img {
+    width: 35%;
+  }
+
+}
+
 @media (max-width: 1440px) {
   #first-section-page-h1 {
     font-size: 4.5rem;
