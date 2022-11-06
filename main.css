@@ -180,10 +180,6 @@ nav button img {
   margin: 0px;
 }
 
-.certifications {
-  margin-left: 5 5px;
-}
-
 .certification img {
   padding-right: 5px;
   padding-top: 8px;
@@ -283,14 +279,9 @@ nav button img {
     margin-left: 300px;
   }
 
-  .certifications {
-    margin-left: 200px;
-  }
-
   .contact img {
     width: 35%;
   }
-
 }
 
 @media (max-width: 1440px) {
@@ -362,7 +353,12 @@ nav button img {
   }
   /* Third Page Section*/
   .certification {
-    margin-left: 175px;
+    margin-left: 12rem;
+    width: 55%;
+  }
+
+  .timeline {
+    margin-left: 14rem;
   }
 
   /* Fourth Page Section */
