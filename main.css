@@ -74,6 +74,10 @@ nav button img {
   font-size: 1.4rem;
 }
 
+#navbarNavAltMarkup > div > a:hover {
+  color: #e7f6f2be;
+}
+
 /* First Section Page */
 
 #first-section-page-h1 {
