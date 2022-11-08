@@ -171,7 +171,6 @@ nav button img {
 }
 
 /*Third Section of the Page*/
-
 #third-page-subtitles {
   color: var(--tertiary);
   margin: 35px 0px;
@@ -305,6 +304,14 @@ nav button img {
     font-size: 1rem;
   }
 
+  .title-of-page {
+    margin-top: 30px;
+  }
+
+  .title-of-page-white {
+    margin-top: 30px;
+  }
+
   #about-me-text {
     font-size: 1rem;
   }
@@ -317,9 +324,20 @@ nav button img {
     margin-left: 300px;
   }
 
+  #fourth-section-page {
+    height: 750px;
+    max-height: 750px;
+  }
+
   .contact img {
     width: 40%;
   }
+
+  #third-section-page {
+    height: 750px;
+    max-height: 750px;
+  }
+  
 }
 
 @media (max-width: 1440px) {
