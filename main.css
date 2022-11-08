@@ -11,8 +11,9 @@
 }
 
 * {
-  transition: all .4s;
+  transition: all ease-in-out;
 }
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -286,14 +287,13 @@ nav button img {
 
 .footer {
   text-align: center;
-  height: 160px;
+  height: 200px;
 }
 
 .footer h1 {
   color: var(--tertiary);
   font-size: 1.4rem;
   margin: 20px 0px;
-  margin-bottom: 50px;
 }
   
 .contacts {
@@ -302,10 +302,73 @@ nav button img {
   justify-content: center;
 }
 
+.contact {
+  height: 125px;
+  max-height: 125px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact a h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+  color: transparent;
+}
+
+.contact:hover img{
+  animation-name: slideUp;
+  animation-duration: 2s;
+  -webkit-animation: slideUp 2s forwards;
+}
+
+.contact:hover a h1 {
+  color: var(--tertiary);
+}
+
+.contact a h1:hover {
+  filter: brightness(80%);
+  text-decoration: none;
+}
+
+.contact img{
+  position: relative;
+  animation-name: slideDown;
+  animation-duration: 2s;
+  -webkit-animation: slideDown 2s forwards;
+}
+
 .contact img {
   width: 40%;
   padding: 0px 40px;
+  margin-top: 50px;
 }
+
+.contact img:hover {
+  filter: brightness(80%);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-100%); 
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%); 
+  }
+}
+
 /* Media Queries */
 
 @media (max-width: 1920px) {
@@ -740,3 +803,4 @@ nav button img {
     padding: 0px;
   }
 }
+
