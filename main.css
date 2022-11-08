@@ -10,29 +10,20 @@
   --quarternary: #a5c9ca;
 }
 
-* {
-  transition: all .5s ease-in-out;
-}
-
-
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: var(--secondary);
   border-radius: 25px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-color: var(--quarternary) ;
   border-radius: 25px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a5c9caa3;
 }
@@ -80,6 +71,7 @@ button:focus{
 
 #go-up-button:hover {
   background-color: rgba(165, 201, 202, 0.85);
+  transition: all .5s ease-in-out;
 }
 
 /* NavBar */
@@ -110,21 +102,39 @@ nav button img {
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
   border-bottom: 1px solid transparent;
+  margin: 0px 16px;
 }
 
 #navbarNavAltMarkup > div > a:hover {
   color: #e7f6f2be;
   border-color: #e7f6f2be;
+  transition: all .5s ease-in-out;
 }
 
 /* First Section Page */
+
+@keyframes fadeIn {
+  0%   {filter: opacity(0%);}
+  10%  {filter: opacity(10%);}
+  20%  {filter: opacity(20%);}
+  30%  {filter: opacity(30%);}
+  40% {filter: opacity(40%);}
+  50% {filter: opacity(50%);}
+  60% {filter: opacity(60%);}
+  70% {filter: opacity(70%);}
+  80% {filter: opacity(80%);}
+  90% {filter: opacity(90%);}
+  100% {filter: opacity(100%);}
+}
 
 #first-section-page-h1 {
   color: var(--tertiary);
   width: 45%;
   font-size: 8rem;
-  margin: 130px auto;
+  margin: 130px auto; 
   height: 550px;
+  animation-name: fadeIn;
+  animation-duration: 1.8s;
 }
 
 #first-section-page {
@@ -136,6 +146,8 @@ nav button img {
 #me-and-eclipses {
   width: 75%;
   margin-bottom: 45px;
+  animation-name: fadeIn;
+  animation-duration: 1.8s;
 }
 
 /* Second Section Page */
@@ -320,16 +332,18 @@ nav button img {
 .contact:hover img{
   animation-name: slideUp;
   animation-duration: 2s;
-  -webkit-animation: slideUp 2s forwards;
+  -webkit-animation: slideUp 1s forwards;
 }
 
 .contact:hover a h1 {
   color: var(--tertiary);
+  transition: all .5s ease-in-out;
 }
 
 .contact a h1:hover {
   filter: brightness(80%);
   text-decoration: none;
+  transition: all .5s ease-in-out;
 }
 
 .contact img{
@@ -347,6 +361,7 @@ nav button img {
 
 .contact img:hover {
   filter: brightness(80%);
+  transition: all .5s ease-in-out;
 }
 
 @keyframes slideUp {

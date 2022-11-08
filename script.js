@@ -22,3 +22,4 @@ function scrollToContacts() {
     var element = document.querySelector('#footer')
     element.scrollIntoView({ behavior: 'smooth'});
 }   
+
