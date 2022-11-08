@@ -16,6 +16,11 @@ body {
   background-color: var(--primary);
 }
 
+.tab {
+  display: inline-block;
+  margin-left: 60px;
+}
+
 button:focus{
   outline: none;
 }
@@ -27,6 +32,8 @@ button:focus{
   bottom: 20px;
   right: 0;
   margin-top: 10px;
+  z-index: 999;
+
 }
 
 #toTop button {
@@ -279,12 +286,16 @@ nav button img {
     font-size: 1rem;
   }
 
+  #about-me-text p {
+    font-size: 1rem;
+  }
+
   .timeline {
     margin-left: 300px;
   }
 
   .contact img {
-    width: 35%;
+    width: 40%;
   }
 }
 
@@ -304,6 +315,7 @@ nav button img {
   #about-me-text {
     font-size: 0.8rem;
   }
+
 }
 
 @media (max-width: 1199.98px) {
@@ -312,7 +324,7 @@ nav button img {
   }
 
   #about-me-text p {
-    margin: 50px 50px;
+    margin: 50px 40px;
   }
 
   #about-me-text {
@@ -572,6 +584,12 @@ nav button img {
   }
 
   /* Second Page Section */
+
+  #second-section-page {
+    max-height: 950px;
+    height: 950px;
+  }
+
   .title-of-page {
     font-size: 1.8rem;
   }
@@ -667,5 +685,4 @@ nav button img {
     width: 40%;
     padding: 0px;
   }
-
 }
