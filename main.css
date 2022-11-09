@@ -96,7 +96,7 @@ nav button img {
 #navbarNavAltMarkup > div > a {
   text-decoration: none;
   color: var(--light);
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
   border-bottom: 1px solid transparent;
@@ -111,19 +111,6 @@ nav button img {
 
 /* First Section Page */
 
-@keyframes fadeIn {
-  0%   {filter: opacity(0%);}
-  10%  {filter: opacity(10%);}
-  20%  {filter: opacity(20%);}
-  30%  {filter: opacity(30%);}
-  40% {filter: opacity(40%);}
-  50% {filter: opacity(50%);}
-  60% {filter: opacity(60%);}
-  70% {filter: opacity(70%);}
-  80% {filter: opacity(80%);}
-  90% {filter: opacity(90%);}
-  100% {filter: opacity(100%);}
-}
 
 #first-section-page-h1 {
   color: var(--light);
@@ -131,8 +118,6 @@ nav button img {
   font-size: 4.5rem;
   margin: 130px auto; 
   height: 550px;
-  animation-name: fadeIn;
-  animation-duration: 1.8s;
 }
 
 /* Image First Section Page */
@@ -140,8 +125,6 @@ nav button img {
 #me-and-eclipses {
   width: 75%;
   margin-bottom: 45px;
-  animation-name: fadeIn;
-  animation-duration: 1.8s;
 }
 
 /* Second Section Page */
@@ -272,19 +255,6 @@ footer h1 {
   margin: 20px 0px;
 }
 
-.contacts {
-  display: flex;
-}
-
-.contacts .contact img {
-  justify-content: center;
-  align-items: center;
-}
-
-
-.contact {
-  
-}
 
 .contact a {
   text-decoration: none;
