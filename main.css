@@ -128,15 +128,11 @@ nav button img {
 #first-section-page-h1 {
   color: var(--light);
   width: 45%;
-  font-size: 8rem;
+  font-size: 4.5rem;
   margin: 130px auto; 
   height: 550px;
   animation-name: fadeIn;
   animation-duration: 1.8s;
-}
-
-#first-section-page {
-  height: 730px;
 }
 
 /* Image First Section Page */
@@ -150,21 +146,13 @@ nav button img {
 
 /* Second Section Page */
 .title-of-page {
-  margin-bottom: 5px;
-  text-align: center;
   font-size: 3.5rem;
-}
-
-.title-of-page-white {
-  margin-top: 80px;
-  text-align: center;
-  font-size: 3.5rem;
-  color: var(--light);
+  margin: 20px 0px;
 }
 
 #about-me-text {
   font-family: 'Ubuntu', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.1rem;
   line-height: 2;
   text-justify: inter-word;
   text-align: justify;
@@ -177,11 +165,6 @@ nav button img {
 #about-me-image {
   border-radius: 20%;
   width: 55%;
-}
-
-#second-section-page {
-  height: 650px;
-  max-height: 650px;
 }
 
 /*Third Section of the Page*/
@@ -284,26 +267,23 @@ nav button img {
 
 /*Footer*/
 
-.footer {
-  text-align: center;
-  height: 200px;
-}
-
-.footer h1 {
-  color: var(--light);
+footer h1 {
   font-size: 1.4rem;
   margin: 20px 0px;
 }
-  
+
 .contacts {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
+.contacts .contact img {
+  justify-content: center;
+  align-items: center;
+}
+
+
 .contact {
-  height: 125px;
-  max-height: 125px;
+  
 }
 
 .contact a {
@@ -333,17 +313,12 @@ nav button img {
   transition: all .5s ease-in-out;
 }
 
-.contact img{
-  position: relative;
+.contact img {
+  width: 15%;
+  margin-top: 50px;
   animation-name: slideDown;
   animation-duration: 2s;
   -webkit-animation: slideDown 2s forwards;
-}
-
-.contact img {
-  width: 40%;
-  padding: 0px 40px;
-  margin-top: 50px;
 }
 
 .contact img:hover {
@@ -371,9 +346,11 @@ nav button img {
   }
 }
 
+
+
 /* Media Queries */
 
-@media (max-width: 1920px) {
+/* @media (max-width: 1920px) {
   #first-section-page-h1 {
     font-size: 4.5rem;
   }
@@ -486,7 +463,7 @@ nav button img {
     max-height: 850px;
     height: 850px;
   }
-  /* Third Page Section*/
+  /* Third Page Section
   .certification {
     margin-left: 12rem;
     width: 55%;
@@ -496,7 +473,7 @@ nav button img {
     margin-left: 14rem;
   }
 
-  /* Fourth Page Section */
+ Fourth Page Section 
   .arsenal h1 {
     font-size: 0.7rem;
   }
@@ -505,7 +482,7 @@ nav button img {
     margin-bottom: 0px;
   }
 
-  /* Footer */
+  /* Footer 
   .footer {
     height: 260px;
   }
@@ -517,7 +494,7 @@ nav button img {
     width: 30%;
     padding: 0px;
   }
-  /* Go Up Button*/
+  /* Go Up Button
 
   #go-up-button {
     width: 80px;
@@ -526,7 +503,7 @@ nav button img {
 }
 
 @media (max-width: 575.98px) {
-  /* Navbar */
+  /* Navbar
 
   nav {
     margin: 15px auto;
@@ -537,14 +514,14 @@ nav button img {
     height: 650px;
   }
 
-  /* First Page Section */
+  /* First Page Section 
   #first-section-page-h1 {
     font-size: 2.3rem;
     margin: 50px 60px;
     height: auto;
   }
 
-  /* Second Page Section */
+  /* Second Page Section 
   .title-of-page {
     font-size: 2.8rem;
   }
@@ -560,8 +537,7 @@ nav button img {
     width: 95%;
   }
 
-  /* Go up button */
-
+  /* Go up button 
   #toTop button {
     font-size: 1.8rem;
   }
@@ -578,13 +554,13 @@ nav button img {
 }
 
 @media (max-width: 425px) {
-  /* First Page Section */
+  /* First Page Section 
   #first-section-page-h1 {
     font-size: 2.5rem;
     margin: 50px auto;
   }
 
-  /* Go up button */
+  /* Go up button 
 
   #toTop button {
     font-size: 1.5rem;
@@ -599,7 +575,7 @@ nav button img {
     margin-right: 25px;
   }
 
-  /* Second Page Section */
+  /* Second Page Section 
   .title-of-page {
     font-size: 1.8rem;
   }
@@ -607,7 +583,7 @@ nav button img {
     font-size: 0.8rem;
   }
 
-  /* Third Page Section */
+  /* Third Page Section 
   .title-of-page-white {
     font-size: 1.6rem;
   }
@@ -636,7 +612,7 @@ nav button img {
     margin-left: 10px;
   }
 
-  /* Fourth Page Section */
+  /* Fourth Page Section 
   #fourth-section-page-title { 
     font-size: 1.6rem;
   }
@@ -663,7 +639,7 @@ nav button img {
     font-size: 0.7rem;
    }
 
-   /* Footer */
+   /* Footer 
 
   
   .footer {
@@ -681,13 +657,13 @@ nav button img {
 }
 
 @media (max-width: 320px) {
-  /* First Page Section */
+  /* First Page Section 
   #first-section-page-h1 {
     font-size: 2.3rem;
     margin: 50px 60px;
   }
 
-  /* Go up button */
+  /* Go up button 
 
   #toTop button {
     font-size: 1.5rem;
@@ -702,7 +678,7 @@ nav button img {
     margin-right: 25px;
   }
 
-  /* Second Page Section */
+  /* Second Page Section 
 
   #second-section-page {
     max-height: 950px;
@@ -724,13 +700,9 @@ nav button img {
     width: 95%;
   }
 
-  /*Third Page section */
+  /*Third Page section 
   .title-of-page-white {
     font-size: 1.3rem;
-  }
-
-  .timeline {
-    margin-left: 12px;
   }
 
   .dot {
@@ -783,12 +755,10 @@ nav button img {
   }
 
   .arsenal  {
-    width: 100%;
     padding: 10px 4px;
-    margin: 0px;
   }
   .arsenal h1 {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     line-height: 25px;
   }
 
@@ -804,80 +774,7 @@ nav button img {
     width: 40%;
     padding: 0px;
   }
-}
+} */
 
 
 
-
-
-
-/* The actual timeline (the vertical ruler) */
-.timeline-container {
-  position: relative;
-  max-width: 50%;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline-container::after {
-  content: "";
-  position: absolute;
-  width: 3px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  left: auto;
-  margin-left: -3px;
-}
-
-/* Container around content */
-.timeline-content {
-  position: relative;
-  background-color: inherit;
-  width: 100%;
-}
-
-/* The circles on the timeline */
-.timeline-content::after {
-  content: "";
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  right: 1px;
-  background-color: #fff;
-  top: 18px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the right */
-.timeline-content-pos {
-  padding: 0px 0px 20px 40px;
-  left: auto;
-}
-
-
-/* Fix the circle for containers on the right side */
-.timeline-content-pos::after {
-  left: -10px;
-}
-
-@media (max-width: 991px) {
-  .timeline-container {
-    max-width: 100%;
-  }
-}
-
-
-/* Add arrows to the right container (pointing left) 
-.timeline-content-pos::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 30px;
-  border: medium solid #fff;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent #fff transparent transparent;
-}
-
-*/
