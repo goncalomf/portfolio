@@ -6,7 +6,7 @@
 :root {
   --primary: #2c3333;
   --secondary: #395b64;
-  --tertiary: #e7f6f2;
+  --light: #e7f6f2;
   --quarternary: #a5c9ca;
 }
 
@@ -85,8 +85,6 @@ nav {
 }
 
 nav button img {
-  margin: 0px;
-  padding: 0px;
   height: 40px;
   width: 40px;
 }
@@ -97,7 +95,7 @@ nav button img {
 
 #navbarNavAltMarkup > div > a {
   text-decoration: none;
-  color: var(--tertiary);
+  color: var(--light);
   font-size: 1.4rem;
   cursor: pointer;
   font-family: 'Ubuntu', sans-serif;
@@ -128,7 +126,7 @@ nav button img {
 }
 
 #first-section-page-h1 {
-  color: var(--tertiary);
+  color: var(--light);
   width: 45%;
   font-size: 8rem;
   margin: 130px auto; 
@@ -151,13 +149,7 @@ nav button img {
 }
 
 /* Second Section Page */
-
-.new-colored-div {
-  background-color: var(--tertiary);
-}
-
 .title-of-page {
-  padding-top: 25px;
   margin-bottom: 5px;
   text-align: center;
   font-size: 3.5rem;
@@ -167,15 +159,15 @@ nav button img {
   margin-top: 80px;
   text-align: center;
   font-size: 3.5rem;
-  color: var(--tertiary);
+  color: var(--light);
 }
 
 #about-me-text {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.8rem;
   line-height: 2;
-  text-align: justify;
   text-justify: inter-word;
+  text-align: justify;
 }
 
 #about-me-text p {
@@ -184,7 +176,7 @@ nav button img {
 
 #about-me-image {
   border-radius: 20%;
-  width: 60%;
+  width: 55%;
 }
 
 #second-section-page {
@@ -193,10 +185,7 @@ nav button img {
 }
 
 /*Third Section of the Page*/
-#third-page-subtitles {
-  color: var(--tertiary);
-  margin: 35px 0px;
-}
+
 
 .timeline {
   display: flex;
@@ -208,7 +197,7 @@ nav button img {
 .line {
   width: 8px;
   height: 200px;
-  background-color: var(--tertiary);
+  background-color: var(--light);
   margin: -5px 16px;
 }
 
@@ -216,7 +205,7 @@ nav button img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-color: var(--tertiary);
+  background-color: var(--light);
 }
 
 .milestones {
@@ -233,7 +222,7 @@ nav button img {
   font-size: 1rem;
   width: 330px;
   line-height: 25px;
-  margin: 0px;
+  margin: 0%;
 }
 
 .certification img {
@@ -242,10 +231,8 @@ nav button img {
 }
 
 .certification {
-  border-bottom: var(--tertiary) solid 2px;
-  display: flex;
+  border-bottom: var(--light) solid 2px;
   padding-bottom: 5px;
-  width: 60%;
   margin-bottom: 55px;
 }
 
@@ -303,7 +290,7 @@ nav button img {
 }
 
 .footer h1 {
-  color: var(--tertiary);
+  color: var(--light);
   font-size: 1.4rem;
   margin: 20px 0px;
 }
@@ -336,7 +323,7 @@ nav button img {
 }
 
 .contact:hover a h1 {
-  color: var(--tertiary);
+  color: var(--light);
   transition: all .5s ease-in-out;
 }
 
@@ -819,3 +806,78 @@ nav button img {
   }
 }
 
+
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline-container {
+  position: relative;
+  max-width: 50%;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-content {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 1px;
+  background-color: #fff;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.timeline-content-pos {
+  padding: 0px 0px 20px 40px;
+  left: auto;
+}
+
+
+/* Fix the circle for containers on the right side */
+.timeline-content-pos::after {
+  left: -10px;
+}
+
+@media (max-width: 991px) {
+  .timeline-container {
+    max-width: 100%;
+  }
+}
+
+
+/* Add arrows to the right container (pointing left) 
+.timeline-content-pos::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+*/
