@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400&family=Raleway:ital,wght@1,800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 /* Some color variables */
 
@@ -20,7 +20,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--quarternary) ;
+  background-color: var(--quarternary);
   border-radius: 25px;
 }
 
@@ -40,7 +40,7 @@ body {
   margin-left: 60px;
 }
 
-button:focus{
+button:focus {
   outline: none;
 }
 
@@ -71,7 +71,7 @@ button:focus{
 
 #go-up-button:hover {
   background-color: rgba(165, 201, 202, 0.85);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* NavBar */
@@ -98,7 +98,7 @@ nav button img {
   color: var(--light);
   font-size: 1.1rem;
   cursor: pointer;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   border-bottom: 1px solid transparent;
   margin: 0px 16px;
 }
@@ -106,17 +106,16 @@ nav button img {
 #navbarNavAltMarkup > div > a:hover {
   color: #e7f6f2be;
   border-color: #e7f6f2be;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /* First Section Page */
 
-
 #first-section-page-h1 {
   color: var(--light);
   width: 45%;
-  font-size: 4.5rem;
-  margin: 130px auto; 
+  font-size: 450%;
+  margin: 130px auto;
   height: 550px;
 }
 
@@ -134,7 +133,7 @@ nav button img {
 }
 
 #about-me-text {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.1rem;
   line-height: 2;
   text-justify: inter-word;
@@ -151,19 +150,9 @@ nav button img {
 }
 
 /*Third Section of the Page*/
-
-
-.timeline {
-  display: flex;
-  margin-left: 170px;
-  margin-top: 50px;
-  height: 350px;
-}
-
 .line {
   width: 8px;
   height: 200px;
-  background-color: var(--light);
   margin: -5px 16px;
 }
 
@@ -171,7 +160,6 @@ nav button img {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background-color: var(--light);
 }
 
 .milestones {
@@ -184,7 +172,7 @@ nav button img {
 }
 
 .milestone h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   width: 330px;
   line-height: 25px;
@@ -200,10 +188,11 @@ nav button img {
   border-bottom: var(--light) solid 2px;
   padding-bottom: 5px;
   margin-bottom: 55px;
+  width: 50%;
 }
 
 .certification .certifcation-text h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   width: 330px;
   line-height: 25px;
@@ -221,22 +210,21 @@ nav button img {
 }
 
 #tech-text {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   text-decoration: none;
   padding: 20px 40px;
   text-align: justify;
 }
 
-#sub-title {
+.sub-title {
   font-size: 1.8rem;
   margin: 30px 0px;
 }
 
 .arsenal {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   display: flex;
-  margin: 0px 80px;
   justify-content: center;
   align-items: center;
   margin-bottom: 65px;
@@ -255,18 +243,17 @@ footer h1 {
   margin: 20px 0px;
 }
 
-
 .contact a {
   text-decoration: none;
 }
 
 .contact a h1 {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1rem;
   color: transparent;
 }
 
-.contact:hover img{
+.contact:hover img {
   animation-name: slideUp;
   animation-duration: 2s;
   -webkit-animation: slideUp 1s forwards;
@@ -274,13 +261,13 @@ footer h1 {
 
 .contact:hover a h1 {
   color: var(--light);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact a h1:hover {
   filter: brightness(80%);
   text-decoration: none;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .contact img {
@@ -293,7 +280,22 @@ footer h1 {
 
 .contact img:hover {
   filter: brightness(80%);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.submitButton {
+  width: 55%;
+  height: 45%;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+
+.submitButton:hover {
+  filter: brightness(80%);
+  transition: all 0.5s ease-in-out;
 }
 
 @keyframes slideUp {
@@ -302,7 +304,7 @@ footer h1 {
   }
 
   to {
-    transform: translateY(-100%); 
+    transform: translateY(-100%);
   }
 }
 
@@ -312,11 +314,127 @@ footer h1 {
   }
 
   to {
-    transform: translateY(0%); 
+    transform: translateY(0%);
   }
 }
 
+@media (max-width: 575.98px) {
+  #first-section-page-h1 {
+    height: 30%;
+    font-size: 2.5rem;
+    margin: 35px 55px;
+  }
 
+  .title-of-page {
+    font-size: 2rem;
+  }
+
+  #about-me-text p {
+    font-size: 0.8rem;
+    margin: 20px 20px;
+  }
+
+  #about-me-text p span {
+    margin-left: 30px;
+  }
+
+  #about-me-image {
+    margin: 20px 0px;
+    width: 75%;
+  }
+
+  .timeline {
+    margin: 20px 0px;
+    padding: 0px 30px;
+    height: 380px;
+  }
+
+  .dot {
+    height: 30px;
+    width: 30px;
+  }
+
+  .line {
+    width: 6px;
+    margin: -5px 12px;
+  }
+
+  .milestone {
+    margin-bottom: 115px;
+  }
+
+  .milestones .milestone h1 {
+    font-size: 0.8rem;
+    width: 115%;
+  }
+
+  .certification {
+    width: 100%;
+    margin-left: 5px;
+  }
+
+  .certification .certifcation-text h1 {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  #tech-text {
+    font-size: 0.8rem;
+  }
+
+  .arsenal h1 {
+    font-size: 0.8rem;
+    height: 15%;
+  }
+
+  .contact img {
+    width: 40%;
+  }
+
+  .input {
+    height: 40%;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  #input-message {
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  #submit-button {
+    height: 30%;
+    font-size: 0.7rem;
+  }
+
+  #go-up-button {
+    width: 60px;
+    height: 60px;
+    font-size: 0.6rem;
+    margin: 0px;
+  }
+
+  #toTop {
+    margin-right: 10px;
+  }
+
+  #toTop button {
+    font-size: 1.4rem;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 991.98px) {
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 1399.98px) {
+}
 
 /* Media Queries */
 
@@ -745,6 +863,3 @@ footer h1 {
     padding: 0px;
   }
 } */
-
-
-

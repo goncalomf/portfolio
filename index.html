@@ -37,34 +37,39 @@
   <header>
     <!-- Navbar -->
     <nav id="topOfPage" class="navbar navbar-expand-lg">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <img
-          class="p-0 m-0"
-          id="sidebar-menu-icon"
-          src="./assets/icons/menu.svg"
-          alt=""
-        />
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav text-center">
-          <a onclick="scrollToAboutMe()" class="nav-item nav-link">About me</a>
-          <a
-            onclick="scrollToEducationCertifications()"
-            class="nav-item nav-link"
-            >Education & Certifications</a
-          >
-          <a onclick="scrollToTech()" class="nav-item nav-link">Technologies</a>
-          <a onclick="scrollToContacts()" class="nav-item nav-link"
-            >Contact me</a
-          >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img
+            class="p-0 m-0"
+            id="sidebar-menu-icon"
+            src="./assets/icons/menu.svg"
+            alt=""
+          />
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center">
+            <a onclick="scrollToAboutMe()" class="nav-item nav-link"
+              >About me</a
+            >
+            <a
+              onclick="scrollToEducationCertifications()"
+              class="nav-item nav-link"
+              >Education & Certifications</a
+            >
+            <a onclick="scrollToTech()" class="nav-item nav-link"
+              >Technologies</a
+            >
+            <a onclick="scrollToContacts()" class="nav-item nav-link"
+              >Contact me</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -74,7 +79,7 @@
     <!-- First Section Page -->
     <div id="first-section-page" class="container-fluid">
       <div class="row">
-        <div class="col-sm-12 col-lg-6 m-auto">
+        <div class="col-sm-12 col-lg-6">
           <h1
             class="animate__animated animate__fadeInUp"
             id="first-section-page-h1"
@@ -85,7 +90,7 @@
           </h1>
         </div>
         <div
-          class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center"
+          class="animate__animated animate__fadeIn col-sm-12 col-lg-6 d-flex align-items-center justify-content-center"
         >
           <img
             id="me-and-eclipses"
@@ -101,10 +106,7 @@
     </div>
 
     <!-- Second section page -->
-    <div
-      id="second-section-page"
-      class="animate__animated animate__fadeInUp container-fluid bg-light"
-    >
+    <div id="second-section-page" class="container-fluid bg-light">
       <div class="row">
         <h1 class="text-center col-sm-12 col-lg-12 title-of-page">About me</h1>
         <div id="about-me-text" class="col-sm-12 col-lg-6">
@@ -134,10 +136,7 @@
     </div>
 
     <!-- Third Section of the page -->
-    <div
-      id="third-section-page"
-      class="animate__animated animate__fadeInUp container-fluid"
-    >
+    <div id="third-section-page" class="container-fluid">
       <div class="row">
         <h1 class="mt-80 text-center text-light title-of-page col-sm-12">
           Education & Certifications
@@ -147,11 +146,11 @@
           class="col-sm-12 col-lg-6 d-flex align-items-center text-light"
         >
           <div class="container">
-            <div class="row">
-              <div class="d-flex ms-auto col-sm-12 col-lg-8">
+            <div class="row my-5">
+              <div class="d-flex ms-auto col-sm-12 col-lg-8 timeline">
                 <div class="lineNdot">
                   <div class="rounded-circle bg-light dot"></div>
-                  <div class="line"></div>
+                  <div class="bg-light line"></div>
                   <div class="rounded-circle bg-light dot"></div>
                 </div>
 
@@ -177,7 +176,7 @@
         </div>
         <div class="col-sm-12 col-lg-6 text-light">
           <div class="certifications">
-            <div class="d-flex w-50 certification">
+            <div class="d-flex certification">
               <img src="assets/icons/certifcation-icon.svg" alt="Papyrus" />
               <div class="certifcation-text">
                 <h1>RSL Level 3 Certificate in Graded</h1>
@@ -193,7 +192,7 @@
     <!--Fourth Section of the Page -->
     <div
       id="fourth-section-page"
-      class="animate__animated animate__fadeInUp container-fluid bg-light"
+      class="animate__animated animate__fadeIn container-fluid bg-light"
     >
       <div class="row">
         <h1 class="col-sm-12 pt-25 mb-5 text-center title-of-page">
@@ -206,15 +205,14 @@
           my arsenal.
         </div>
         <h1
-          id="sub-title"
-          class="d-flex align-items-center justify-content-center"
+          class="d-flex align-items-center justify-content-center sub-title"
         >
           My Arsenal
         </h1>
         <div class="container-fluid">
           <div class="row">
             <div
-              class="d-flex flex-column col-sm-6 m-0 d-block arsenal align-items-center arsenal"
+              class="d-flex flex-column col-sm-6 align-items-center arsenal"
             >
               <h1>Java - Intermediate level</h1>
               <h1>SQL - Intermediate level</h1>
@@ -223,13 +221,20 @@
               <h1>Ionic - Intermediate level</h1>
             </div>
             <div
-              class="d-flex flex-column col-sm-6 m-0 d-block arsenal align-items-center arsenal"
+              class="d-flex flex-column col-sm-6 align-items-center arsenal"
             >
               <h1>HTML - Intermediate level</h1>
               <h1>C - Beginner level</h1>
               <h1>Javascript - Beginner level</h1>
               <h1>Python - Beginner level</h1>
               <h1>Bootstrap - Beginner level</h1>
+            </div>
+            <h1 class="col-sm-12 text-center sub-title">
+              Languages
+            </h1>
+            <div class="d-flex flex-column col-sm-12 align-items-center arsenal">
+              <h1 class="px-5">Portuguese - Native Speaker</h1>
+              <h1 class="px-5">English - Advanced Level</h1>
             </div>
           </div>
         </div>
@@ -239,8 +244,8 @@
     <!--Footer  of the Page -->
 
     <footer class="text-light">
-      <div class="animate__animated animate__fadeInUp container-fluid">
-        <h1 class="text-center">Contact me and Follow me!</h1>
+      <div class="animate__animated animate__fadeIn container-fluid">
+        <h1 class="text-center">Follow me!</h1>
         <div class="d-flex text-center">
           <div class="contact">
             <a href="https://github.com/goncalomf">
@@ -282,16 +287,62 @@
               <h1>Spotify</h1>
             </a>
           </div>
-          <div class="contact">
-            <a href="mailto:goncalofernandes01@gmail.com">
-              <img
-                src="assets/icons/social-media/free-mail.svg"
-                alt="e-mail-icon"
-              />
-              <h1>E-Mail</h1>
-            </a>
-          </div>
         </div>
+      </div>
+      <div class="d-flex container w-50">
+        <form class="row" form="contact-me-form">
+          <h1 class="text-center">Contact me!</h1>
+          <div class="col-sm-12 col-lg-6 d-flex flex-column">
+            <label for="inputsecondname" class="py-1">First Name</label>
+            <input
+              type="text"
+              class="form-control bg-light justify-content-center align-items-center input"
+              id="input-first-name"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-6 d-flex flex-column">
+            <label for="inputsecondname" class="py-1">Second Name</label>
+            <input
+              type="text"
+              class="form-control bg-light justify-content-center align-items-center input"
+              id="input-second-name"
+              placeholder="Second Name"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-12 d-flex flex-column">
+            <label for="inputfemail" class="py-1">E-Mail</label>
+            <input
+              type="email"
+              class="form-control bg-light justify-content-center align-items-center input"
+              id="input-email"
+              placeholder="E-Mail"
+            />
+          </div>
+          <div class="col-sm-12 col-lg-12 d-flex flex-column">
+            <label for="exampleFormControlTextarea1" class="form-label py-auto"
+              >Message</label
+            >
+            <textarea
+              class="form-control py-1 justify-content-center align-items-center"
+              id="input-message"
+              rows="4"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+          <div
+            class="col-sm-12 col-lg-12 d-flex justify-content-center align-items-center"
+          >
+            <button
+              id="submit-button"
+              form="contact-me-form"
+              type="button"
+              class="text-light submitButton my-5 mx-auto"
+            >
+              <p class="m-0">Submit!</p>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
