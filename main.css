@@ -6,7 +6,7 @@
 :root {
   --primary: #2C3333;
   --secondary: #395B64;
-  --light: #E7F6F2;
+  --tertiary: #E7F6F2;
   --quarternary: #A5C9CA;
 }
 
@@ -74,7 +74,7 @@ button:focus {
   transition: all 0.5s ease-in-out;
 }
 
-/* NavBar */
+/* NavBar  MUDAR COR LIGHT*/
 
 nav {
   border-radius: 20px;
@@ -95,7 +95,7 @@ nav button img {
 
 #navbarNavAltMarkup > div > a {
   text-decoration: none;
-  color: var(--light);
+  color: var(--tertiary);
   font-size: 1.1rem;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
@@ -112,7 +112,7 @@ nav button img {
 /* First Section Page */
 
 #first-section-page-h1 {
-  color: var(--light);
+  color: var(--tertiary);
   width: 45%;
   font-size: 450%;
   margin: 130px auto;
@@ -127,7 +127,18 @@ nav button img {
 }
 
 /* Second Section Page */
+
+#second-section-page{
+  background-color: var(--tertiary);
+}
+
 .title-of-page {
+  font-size: 3.5rem;
+  margin: 20px 0px;
+  color: var(--tertiary);
+}
+
+.title-of-page-black {
   font-size: 3.5rem;
   margin: 20px 0px;
 }
@@ -150,16 +161,23 @@ nav button img {
 }
 
 /*Third Section of the Page*/
+
+.timeline {
+  margin-left: 40%;
+}
+
 .line {
   width: 8px;
   height: 200px;
   margin: -5px 16px;
+  background-color: var(--tertiary);
 }
 
 .dot {
   width: 40px;
   height: 40px;
   border-radius: 100%;
+  background-color: var(--tertiary);
 }
 
 .milestones {
@@ -169,6 +187,7 @@ nav button img {
 
 .milestone {
   margin-bottom: 135px;
+  color: var(--tertiary);
 }
 
 .milestone h1 {
@@ -177,6 +196,7 @@ nav button img {
   width: 330px;
   line-height: 25px;
   margin: 0%;
+  color: var(--tertiary);
 }
 
 .certification img {
@@ -185,7 +205,7 @@ nav button img {
 }
 
 .certification {
-  border-bottom: var(--light) solid 2px;
+  border-bottom: var(--tertiary) solid 2px;
   padding-bottom: 5px;
   margin-bottom: 55px;
   width: 50%;
@@ -197,6 +217,7 @@ nav button img {
   width: 330px;
   line-height: 25px;
   margin: 0px;
+  color: var(--tertiary);
 }
 
 /* Fourth Section of the Page */
@@ -260,7 +281,7 @@ footer h1 {
 }
 
 .contact:hover a h1 {
-  color: var(--light);
+  color: var(--tertiary);
   transition: all 0.5s ease-in-out;
 }
 
@@ -268,6 +289,10 @@ footer h1 {
   filter: brightness(80%);
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+
+footer {
+  color: var(--tertiary);
 }
 
 .contact img {
@@ -291,6 +316,7 @@ footer h1 {
   border: none;
   cursor: pointer;
   background-color: var(--secondary);
+  color: var(--tertiary);
 }
 
 .submitButton:hover {
@@ -299,11 +325,20 @@ footer h1 {
 }
 
 .form-control {
-  background-color: var(--light);
+  background-color: var(--tertiary);
+}
+
+.form-control:focus {
+  background-color: var(--tertiary);
+  border: none;
 }
 
 #form-section {
   margin-top: 8%;
+}
+
+.copyright-text {
+  font-size: 0.8rem;
 }
 
 @keyframes slideUp {
@@ -326,6 +361,91 @@ footer h1 {
   }
 }
 
+@media (max-width: 1399.98px) {
+  .timeline {
+    margin-left: 30%;
+    padding: 0px 0px;
+  }
+  .certification {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #about-me-text p {
+    font-size: 1rem;
+    margin: 125px 40px;
+  }
+
+  #about-me-text p span {
+    margin-left: 35px;
+  }
+
+  #about-me-image {
+    margin: 20px 0px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .timeline {
+    margin-left: 30%;
+    padding: 0px 0px;
+  }
+
+  .certification {
+    width: 100%;
+    margin-left: 60%;
+  }
+
+  .certification img {
+    width: 20%;
+  }
+
+  .certification .certifcation-text h1 {
+    font-size: 1rem;
+    width: 155%;
+  }
+
+  .contact img {
+    width: 25%;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #about-me-image {
+    width: 65%;
+    margin: 35px 0px;
+  }
+
+  #about-me-text p {
+    font-size: 1rem;
+  }
+
+  .timeline {
+    margin: 20px 0px;
+    padding: 0px 125px;
+  }
+
+  .certification {
+    width: 55%;
+    margin-left: 135px;
+  }
+
+  .milestones .milestone h1 {
+    font-size: 0.8rem;
+    width: 170%;
+  }
+
+  .certification .certifcation-text h1 {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+
+
 @media (max-width: 575.98px) {
   #first-section-page-h1 {
     height: 30%;
@@ -334,6 +454,10 @@ footer h1 {
   }
 
   .title-of-page {
+    font-size: 2rem;
+  }
+
+  .title-of-page-black {
     font-size: 2rem;
   }
 
@@ -373,7 +497,7 @@ footer h1 {
 
   .milestones .milestone h1 {
     font-size: 0.8rem;
-    width: 115%;
+    width: 100%;
   }
 
   .certification {
@@ -432,17 +556,6 @@ footer h1 {
   }
 }
 
-@media (max-width: 767.98px) {
-}
-
-@media (max-width: 991.98px) {
-}
-
-@media (max-width: 1199.98px) {
-}
-
-@media (max-width: 1399.98px) {
-}
 
 /* Media Queries */
 

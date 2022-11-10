@@ -55,7 +55,7 @@
           />
         </button>
         <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-center text-light">
+          <div class="navbar-nav text-center">
             <a onclick="scrollToAboutMe()" class="nav-item nav-link"
               >About me</a
             >
@@ -107,9 +107,9 @@
     </div>
 
     <!-- Second section page -->
-    <div id="second-section-page" class="container-fluid bg-light">
+    <div id="second-section-page" class="container-fluid">
       <div class="row">
-        <h1 class="text-center col-sm-12 col-lg-12 title-of-page">About me</h1>
+        <h1 class="text-center col-sm-12 col-lg-12 title-of-page-black">About me</h1>
         <div id="about-me-text" class="col-sm-12 col-lg-6">
           <p>
             <span class="tab"></span>Hi! My Name is Gonçalo Morais Fernandes, I
@@ -137,22 +137,22 @@
     </div>
 
     <!-- Third Section of the page -->
-    <div id="third-section-page" class="container-fluid">
+    <div id="third-section-page" class="d-flex container-fluid">
       <div class="row">
-        <h1 class="mt-80 text-center text-light title-of-page col-sm-12">
+        <h1 class="mt-80 text-center  col-sm-12 title-of-page">
           Education & Certifications
         </h1>
         <div
           id="third-page-subtitles"
-          class="col-sm-12 col-lg-6 d-flex align-items-center text-light"
+          class="col-sm-12 col-lg-6 d-flex align-items-center"
         >
           <div class="container">
             <div class="row my-5">
-              <div class="d-flex ms-auto col-sm-12 col-lg-8 timeline">
+              <div class="d-flex col-sm-12 col-md-6 col-lg-6 timeline">
                 <div class="lineNdot">
-                  <div class="rounded-circle bg-light dot"></div>
-                  <div class="bg-light line"></div>
-                  <div class="rounded-circle bg-light dot"></div>
+                  <div class="rounded-circle dot"></div>
+                  <div class="line"></div>
+                  <div class="rounded-circle dot"></div>
                 </div>
 
                 <div class="col-sm-6 col-lg-6 milestones">
@@ -175,7 +175,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-lg-6 text-light">
+        <div class="col-sm-12 col-md-6 col-lg-6">
           <div class="certifications">
             <div class="d-flex certification">
               <img src="assets/icons/certifcation-icon.svg" alt="Papyrus" />
@@ -196,7 +196,7 @@
       class="animate__animated animate__fadeIn container-fluid bg-light"
     >
       <div class="row">
-        <h1 class="col-sm-12 pt-25 mb-5 text-center title-of-page">
+        <h1 class="col-sm-12 pt-25 mb-5 text-center title-of-page-black">
           Technologies
         </h1>
         <div id="tech-text" class="col-lg-12 col-sm-12 text-center">
@@ -238,7 +238,7 @@
 
     <!--Footer  of the Page -->
 
-    <footer class="text-light">
+    <footer>
       <div class="animate__animated animate__fadeIn container-fluid">
         <h1 class="text-center">Follow me!</h1>
         <div class="d-flex text-center">
@@ -285,13 +285,13 @@
         </div>
       </div>
       <div id="form-section" class="d-flex container-fluid w-50">
-        <form class="row" form="contact-me-form">
+        <form id="contactmeform" class="row">
           <h1 class="text-center">Contact me!</h1>
           <div class="col-sm-12 col-lg-6 d-flex flex-column">
             <label for="inputsecondname" class="py-1">First Name</label>
             <input
               type="text"
-              class="form-control bg-light justify-content-center align-items-center input"
+              class="form-control justify-content-center align-items-center input"
               id="input-first-name"
             />
           </div>
@@ -299,12 +299,12 @@
             <label for="inputsecondname" class="py-1">Second Name</label>
             <input
               type="text"
-              class="form-control bg-light justify-content-center align-items-center input"
+              class="form-control justify-content-center align-items-center input"
               id="input-second-name"
             />
           </div>
           <div class="col-sm-12 col-lg-12 d-flex flex-column">
-            <label for="inputfemail" class="py-1">E-Mail</label>
+            <label for="inputemail" class="py-1">E-Mail</label>
             <input
               type="email"
               class="form-control justify-content-center align-items-center input"
@@ -326,15 +326,16 @@
           >
             <button
               id="submit-button"
-              form="contact-me-form"
               type="button"
-              class="text-light submitButton my-5 mx-auto"
+              class="submitButton my-5 mx-auto"
+              onclick="submitForm()"
             >
               <p class="m-0">Submit!</p>
             </button>
           </div>
         </form>
       </div>
+      <h1 class="col-sm-12 text-center copyright-text">2022 - Gonçalo Fernandes © </h1>
     </footer>
   </body>
 </html>
