@@ -56,20 +56,20 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav text-center text-light">
-              <a onclick="scrollToAboutMe()" class="nav-item nav-link"
-                >About me</a
-              >
-              <a
-                onclick="scrollToEducationCertifications()"
-                class="nav-item nav-link"
-                >Education & Certifications</a
-              >
-              <a onclick="scrollToTech()" class="nav-item nav-link"
-                >Technologies</a
-              >
-              <a onclick="scrollToContacts()" class="nav-item nav-link"
-                >Contact me</a
-              >
+            <a onclick="scrollToAboutMe()" class="nav-item nav-link"
+              >About me</a
+            >
+            <a
+              onclick="scrollToEducationCertifications()"
+              class="nav-item nav-link"
+              >Education & Certifications</a
+            >
+            <a onclick="scrollToTech()" class="nav-item nav-link"
+              >Technologies</a
+            >
+            <a onclick="scrollToContacts()" class="nav-item nav-link"
+              >Contact me</a
+            >
           </div>
         </div>
       </div>
@@ -284,7 +284,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex container w-50">
+      <div id="form-section" class="d-flex container-fluid w-50">
         <form class="row" form="contact-me-form">
           <h1 class="text-center">Contact me!</h1>
           <div class="col-sm-12 col-lg-6 d-flex flex-column">
@@ -293,7 +293,6 @@
               type="text"
               class="form-control bg-light justify-content-center align-items-center input"
               id="input-first-name"
-              placeholder="First Name"
             />
           </div>
           <div class="col-sm-12 col-lg-6 d-flex flex-column">
@@ -302,16 +301,14 @@
               type="text"
               class="form-control bg-light justify-content-center align-items-center input"
               id="input-second-name"
-              placeholder="Second Name"
             />
           </div>
           <div class="col-sm-12 col-lg-12 d-flex flex-column">
             <label for="inputfemail" class="py-1">E-Mail</label>
             <input
               type="email"
-              class="form-control bg-light justify-content-center align-items-center input"
+              class="form-control justify-content-center align-items-center input"
               id="input-email"
-              placeholder="E-Mail"
             />
           </div>
           <div class="col-sm-12 col-lg-12 d-flex flex-column">
@@ -322,7 +319,6 @@
               class="form-control py-1 justify-content-center align-items-center"
               id="input-message"
               rows="4"
-              placeholder="Write your message..."
             ></textarea>
           </div>
           <div

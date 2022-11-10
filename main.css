@@ -4,10 +4,10 @@
 /* Some color variables */
 
 :root {
-  --primary: #2c3333;
-  --secondary: #395b64;
-  --light: #e7f6f2;
-  --quarternary: #a5c9ca;
+  --primary: #2C3333;
+  --secondary: #395B64;
+  --light: #E7F6F2;
+  --quarternary: #A5C9CA;
 }
 
 ::-webkit-scrollbar {
@@ -296,6 +296,14 @@ footer h1 {
 .submitButton:hover {
   filter: brightness(80%);
   transition: all 0.5s ease-in-out;
+}
+
+.form-control {
+  background-color: var(--light);
+}
+
+#form-section {
+  margin-top: 8%;
 }
 
 @keyframes slideUp {
